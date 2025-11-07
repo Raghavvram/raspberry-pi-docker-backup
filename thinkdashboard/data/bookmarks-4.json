@@ -1,0 +1,36 @@
+{
+  "page": {
+    "id": 4,
+    "name": "Anonymous"
+  },
+  "categories": [
+    {
+      "id": "xfourms",
+      "name": "XFourms",
+      "originalId": "others"
+    }
+  ],
+  "bookmarks": [
+    {
+      "name": "confessionstories",
+      "url": "https://www.confessionstories.org/confessions",
+      "shortcut": "",
+      "category": "xfourms",
+      "checkStatus": false
+    },
+    {
+      "name": "confessionpost",
+      "url": "https://www.confessionpost.com/",
+      "shortcut": "",
+      "category": "xfourms",
+      "checkStatus": false
+    },
+    {
+      "name": "anonymousconfessions",
+      "url": "https://anonymousconfessions.com/",
+      "shortcut": "",
+      "category": "xfourms",
+      "checkStatus": false
+    }
+  ]
+}

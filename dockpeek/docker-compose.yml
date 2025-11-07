@@ -1,0 +1,14 @@
+services:
+  dockpeek:
+    image: dockpeek/dockpeek:latest
+    container_name: dockpeek
+    environment:
+      - SECRET_KEY=2f715691-b7f9-4a82-9c31-393c86312e19 
+      - USERNAME=admin
+      - PASSWORD=admin@007
+    ports:
+      - "3420:8000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+

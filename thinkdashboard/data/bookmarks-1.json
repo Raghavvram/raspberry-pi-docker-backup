@@ -1,0 +1,294 @@
+{
+  "page": {
+    "id": 1,
+    "name": "IMP"
+  },
+  "categories": [
+    {
+      "id": "development",
+      "name": "Development",
+      "originalId": "development"
+    },
+    {
+      "id": "search",
+      "name": "Search",
+      "originalId": "search"
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "originalId": "utilities"
+    },
+    {
+      "id": "ai",
+      "name": "AI",
+      "originalId": "category-6"
+    },
+    {
+      "id": "self-hosting",
+      "name": "Self-Hosting",
+      "originalId": "category-7"
+    }
+  ],
+  "bookmarks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/raghavvram",
+      "shortcut": "G",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "Inoreader",
+      "url": "https://www.inoreader.com/",
+      "shortcut": "IN",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "Capacities",
+      "url": "https://app.capacities.io/",
+      "shortcut": "CA",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "shortcut": "PER",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "Gemini",
+      "url": "https://gemini.google.com/",
+      "shortcut": "GEM",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "Networking-toolbox",
+      "url": "https://networking-toolbox.as93.net/",
+      "shortcut": "NTLS",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "PI-HOLE",
+      "url": "http://192.168.0.215/admin/",
+      "shortcut": "PIH",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "TP-LINK",
+      "url": "http://192.168.0.1",
+      "shortcut": "RTR",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "ReadDeck",
+      "url": "http://192.168.0.215:17862/",
+      "shortcut": "RDK",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "Grok",
+      "url": "https://grok.com/",
+      "shortcut": "GROK",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "DiagramGPT",
+      "url": "https://www.eraser.io/diagramgpt",
+      "shortcut": "DGPT",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "TailScale",
+      "url": "https://login.tailscale.com/admin/machines",
+      "shortcut": "TSC",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://dash.cloudflare.com/a95df8c128fe19c4483764bd5c4aae93/home/domains",
+      "shortcut": "CLDF",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "DockerHub",
+      "url": "https://hub.docker.com/repositories/raghavvram",
+      "shortcut": "DCKR",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "VagrantBoxes",
+      "url": "https://portal.cloud.hashicorp.com/vagrant/discover",
+      "shortcut": "VBAG",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "IT-TOOLS",
+      "url": "https://it-tools.tech/",
+      "shortcut": "ITTS",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "Supabase",
+      "url": "https://supabase.com/dashboard/org/arcxyivmubfkzuqqxfqq",
+      "shortcut": "SBASE",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "PyPI",
+      "url": "https://pypi.org/manage/projects/",
+      "shortcut": "PYPI",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai/models",
+      "shortcut": "OPNRT",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "Render",
+      "url": "https://dashboard.render.com/",
+      "shortcut": "RNDR",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "OpenBB",
+      "url": "https://pro.openbb.co/app/809a4fbf-33b3-4ef0-85f7-2eaaffe884cd?tab=overview",
+      "shortcut": "OPBB",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "UptimeRobot",
+      "url": "https://dashboard.uptimerobot.com/monitors",
+      "shortcut": "UPROB",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "VertexStudio",
+      "url": "https://console.cloud.google.com/vertex-ai/studio/multimodal?hl=en\u0026pli=1\u0026project=main-lab-testing",
+      "shortcut": "VTEXS",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "GPAD-Tester",
+      "url": "https://hardwaretester.com/gamepad",
+      "shortcut": "GPADT",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "groq",
+      "url": "https://console.groq.com/keys",
+      "shortcut": "GROQ",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "Tailscale",
+      "url": "https://login.tailscale.com/admin/machines",
+      "shortcut": "TSCAL",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "Paperless-ngx",
+      "url": "http://192.168.0.215:28000",
+      "shortcut": "PNGX",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "Dockage",
+      "url": "http://192.168.0.215:5001/",
+      "shortcut": "DOCKG",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "Searcxng",
+      "url": "http://192.168.0.215:38181/",
+      "shortcut": "SXNG",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "Raspberrypi",
+      "url": "https://connect.raspberrypi.com/devices",
+      "shortcut": "RASPI",
+      "category": "utilities",
+      "checkStatus": false
+    },
+    {
+      "name": "Grokipedia",
+      "url": "https://grokipedia.com/",
+      "shortcut": "GPEDI",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "Farfalle",
+      "url": "https://www.farfalle.dev/",
+      "shortcut": "FALLE",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "Scira",
+      "url": "https://scira.ai/",
+      "shortcut": "SCIRA",
+      "category": "ai",
+      "checkStatus": false
+    },
+    {
+      "name": "Marimo",
+      "url": "https://marimo.app/",
+      "shortcut": "MARIM",
+      "category": "development",
+      "checkStatus": false
+    },
+    {
+      "name": "Trilium",
+      "url": "http://192.168.0.215:48583",
+      "shortcut": "TRILI",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "Whoogle",
+      "url": "http://192.168.0.215:35000/",
+      "shortcut": "WHOGL",
+      "category": "self-hosting",
+      "checkStatus": false
+    },
+    {
+      "name": "DockPeek",
+      "url": "http://192.168.0.215:3420/",
+      "shortcut": "DCPK",
+      "category": "self-hosting",
+      "checkStatus": false
+    }
+  ]
+}

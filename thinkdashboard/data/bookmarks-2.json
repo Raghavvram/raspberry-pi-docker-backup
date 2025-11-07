@@ -1,0 +1,219 @@
+{
+  "page": {
+    "id": 2,
+    "name": "CLASSIC"
+  },
+  "categories": [
+    {
+      "id": "legacy",
+      "name": "Legacy",
+      "originalId": "others"
+    },
+    {
+      "id": "devtools",
+      "name": "DevTools",
+      "originalId": "category-2"
+    },
+    {
+      "id": "vit-ap",
+      "name": "VIT-AP",
+      "originalId": "category-3"
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "originalId": "category-4"
+    }
+  ],
+  "bookmarks": [
+    {
+      "name": "CPUlator",
+      "url": "https://cpulator.01xz.net/?sys=arm",
+      "shortcut": "CPU",
+      "category": "devtools",
+      "checkStatus": false
+    },
+    {
+      "name": "Archive",
+      "url": "https://archive.ph/",
+      "shortcut": "APH",
+      "category": "legacy",
+      "checkStatus": false
+    },
+    {
+      "name": "RaySo",
+      "url": "https://ray.so/#lineNumbers=true\u0026padding=16\u0026background=true\u0026darkMode=true",
+      "shortcut": "RAY",
+      "category": "devtools",
+      "checkStatus": false
+    },
+    {
+      "name": "DNSdsump",
+      "url": "https://dnsdumpster.com/",
+      "shortcut": "DDMP",
+      "category": "legacy",
+      "checkStatus": false
+    },
+    {
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "shortcut": "EXCA",
+      "category": "devtools",
+      "checkStatus": false
+    },
+    {
+      "name": "GMAIL",
+      "url": "https://mail.google.com/mail/u/0/#inbox",
+      "shortcut": "GMAIL",
+      "category": "vit-ap",
+      "checkStatus": false
+    },
+    {
+      "name": "CDC",
+      "url": "https://cdc.vit.ac.in/login",
+      "shortcut": "CDC",
+      "category": "vit-ap",
+      "checkStatus": false
+    },
+    {
+      "name": "VTOP",
+      "url": "https://vtop.vitap.ac.in/vtop/login",
+      "shortcut": "VTOP",
+      "category": "vit-ap",
+      "checkStatus": false
+    },
+    {
+      "name": "SFlix",
+      "url": "https://sflix.ps/home",
+      "shortcut": "SLX",
+      "category": "media",
+      "checkStatus": false
+    },
+    {
+      "name": "OSboxes",
+      "url": "https://www.osboxes.org/vmware-images/",
+      "shortcut": "OSBOX",
+      "category": "legacy",
+      "checkStatus": false
+    },
+    {
+      "name": "Spotify",
+      "url": "https://open.spotify.com/",
+      "shortcut": "SPOT",
+      "category": "media",
+      "checkStatus": false
+    },
+    {
+      "name": "FossTorrent",
+      "url": "https://fosstorrents.com/",
+      "shortcut": "FOSST",
+      "category": "legacy",
+      "checkStatus": false
+    },
+    {
+      "name": "AwesomeFOSS",
+      "url": "https://awsmfoss.com/",
+      "shortcut": "AWFO",
+      "category": "legacy",
+      "checkStatus": false
+    },
+    {
+      "name": "GetIntoPC",
+      "url": "https://getintopc.com/",
+      "shortcut": "GIPC",
+      "category": "legacy",
+      "checkStatus": false
+    },
+    {
+      "name": "iGetIntoPC",
+      "url": "https://igetintopc.com/",
+      "shortcut": "IGIPC",
+      "category": "legacy",
+      "checkStatus": false
+    },
+    {
+      "name": "FMHY",
+      "url": "https://fmhy.pages.dev/",
+      "shortcut": "FMHY",
+      "category": "media",
+      "checkStatus": false
+    },
+    {
+      "name": "JobPrep",
+      "url": "https://vit.jobprepindia.com/users/sign_in",
+      "shortcut": "JOPR",
+      "category": "vit-ap",
+      "checkStatus": false
+    },
+    {
+      "name": "ExpertHire",
+      "url": "https://practice.experthire.io/login",
+      "shortcut": "EXHIR",
+      "category": "vit-ap",
+      "checkStatus": false
+    },
+    {
+      "name": "VSCODE-THEMES",
+      "url": "https://vscodethemes.com/",
+      "shortcut": "VSTHE",
+      "category": "devtools",
+      "checkStatus": false
+    },
+    {
+      "name": "WinTerminal-Themes",
+      "url": "https://windowsterminalthemes.dev/",
+      "shortcut": "WINTE",
+      "category": "devtools",
+      "checkStatus": false
+    },
+    {
+      "name": "YTS",
+      "url": "https://www.yts-official.to/",
+      "shortcut": "YTS",
+      "category": "media",
+      "checkStatus": false
+    },
+    {
+      "name": "Media-API",
+      "url": "https://www.vidking.net/",
+      "shortcut": "MAPI",
+      "category": "media",
+      "checkStatus": false
+    },
+    {
+      "name": "Downsub",
+      "url": "https://downsub.com/",
+      "shortcut": "DSUB",
+      "category": "media",
+      "checkStatus": false
+    },
+    {
+      "name": "LogicNetworkSim",
+      "url": "https://janjaromirhorak.github.io/hradla/",
+      "shortcut": "LNSIM",
+      "category": "devtools",
+      "checkStatus": false
+    },
+    {
+      "name": "YIFY_SUB",
+      "url": "https://yifysubtitles.me/",
+      "shortcut": "YIFYS",
+      "category": "media",
+      "checkStatus": false
+    },
+    {
+      "name": "PrivacyTools",
+      "url": "https://www.privacytools.io/",
+      "shortcut": "PRITO",
+      "category": "devtools",
+      "checkStatus": false
+    },
+    {
+      "name": "AlternativeTo",
+      "url": "https://alternativeto.net/",
+      "shortcut": "ALTTO",
+      "category": "legacy",
+      "checkStatus": false
+    }
+  ]
+}

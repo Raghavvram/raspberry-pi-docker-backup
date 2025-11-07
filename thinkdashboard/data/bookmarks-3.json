@@ -1,0 +1,163 @@
+{
+  "page": {
+    "id": 3,
+    "name": "Varibale"
+  },
+  "categories": [
+    {
+      "id": "games",
+      "name": "Games",
+      "originalId": "others"
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "originalId": "category-2"
+    },
+    {
+      "id": "github-imp-repo",
+      "name": "Github-Imp-Repo",
+      "originalId": "category-3"
+    },
+    {
+      "id": "docker-compose-imp",
+      "name": "Docker-Compose-Imp",
+      "originalId": "category-4"
+    }
+  ],
+  "bookmarks": [
+    {
+      "name": "Fitgirl",
+      "url": "https://fitgirl-repacks.site/",
+      "shortcut": "FITG",
+      "category": "games",
+      "checkStatus": false
+    },
+    {
+      "name": "DODI",
+      "url": "https://dodi-repacks.site/",
+      "shortcut": "DODI",
+      "category": "games",
+      "checkStatus": false
+    },
+    {
+      "name": "GameRepack",
+      "url": "https://game-repack.site/",
+      "shortcut": "RPACK",
+      "category": "games",
+      "checkStatus": false
+    },
+    {
+      "name": "OVA",
+      "url": "https://www.ovagames.com/",
+      "shortcut": "OVA",
+      "category": "games",
+      "checkStatus": false
+    },
+    {
+      "name": "Steamunlocked",
+      "url": "https://steamunlocked.org/",
+      "shortcut": "STMUL",
+      "category": "games",
+      "checkStatus": false
+    },
+    {
+      "name": "FlingTrainer",
+      "url": "https://flingtrainer.com/",
+      "shortcut": "FLING",
+      "category": "games",
+      "checkStatus": false
+    },
+    {
+      "name": "ProtoMail",
+      "url": "https://mail.proton.me/u/0/inbox",
+      "shortcut": "PTRM",
+      "category": "social",
+      "checkStatus": false
+    },
+    {
+      "name": "GMAIL",
+      "url": "https://mail.google.com/mail/u/0/#inbox",
+      "shortcut": "GMAIL",
+      "category": "social",
+      "checkStatus": false
+    },
+    {
+      "name": "TempMail",
+      "url": "https://temp-mail.org/",
+      "shortcut": "TMAIL",
+      "category": "social",
+      "checkStatus": false
+    },
+    {
+      "name": "PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "shortcut": "PADOC",
+      "category": "github-imp-repo",
+      "checkStatus": false
+    },
+    {
+      "name": "ThinkDashboard",
+      "url": "https://github.com/MatiasDesuu/ThinkDashboard",
+      "shortcut": "THIK",
+      "category": "docker-compose-imp",
+      "checkStatus": false
+    },
+    {
+      "name": "FossFLOW",
+      "url": "https://github.com/stan-smith/FossFLOW",
+      "shortcut": "FFLOW",
+      "category": "docker-compose-imp",
+      "checkStatus": false
+    },
+    {
+      "name": "Beszel",
+      "url": "https://github.com/henrygd/beszel",
+      "shortcut": "BESZ",
+      "category": "github-imp-repo",
+      "checkStatus": false
+    },
+    {
+      "name": "Paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx/blob/dev/docker/compose/docker-compose.postgres-tika.yml",
+      "shortcut": "PLNGX",
+      "category": "docker-compose-imp",
+      "checkStatus": false
+    },
+    {
+      "name": "Papra",
+      "url": "https://github.com/papra-hq/papra",
+      "shortcut": "PAPRA",
+      "category": "docker-compose-imp",
+      "checkStatus": false
+    },
+    {
+      "name": "Marimo",
+      "url": "https://github.com/marimo-team/marimo",
+      "shortcut": "SMARI",
+      "category": "github-imp-repo",
+      "checkStatus": false
+    },
+    {
+      "name": "Kaneo",
+      "url": "https://github.com/usekaneo/kaneo",
+      "shortcut": "KANEO",
+      "category": "github-imp-repo",
+      "checkStatus": false
+    },
+    {
+      "name": "SaveGamesPRO",
+      "url": "https://savegame.pro/",
+      "shortcut": "SVGMP",
+      "category": "games",
+      "checkStatus": false
+    },
+    {
+      "name": "GmesSaveWorld",
+      "url": "https://www.savegameworld.com/pc-save-game/",
+      "shortcut": "GMSVW",
+      "category": "games",
+      "checkStatus": false
+    }
+  ]
+}

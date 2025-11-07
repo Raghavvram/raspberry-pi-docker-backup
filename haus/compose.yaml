@@ -1,0 +1,9 @@
+services:
+  haus:
+    image: ghcr.io/remvze/haus
+    logging:
+      options:
+        max-size: 1g
+    restart: always
+    ports:
+      - '18787:8080'
