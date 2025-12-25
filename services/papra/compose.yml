@@ -1,0 +1,12 @@
+services:
+  papra:
+    container_name: papra
+    image: ghcr.io/papra-hq/papra:latest
+    restart: unless-stopped
+    ports:
+      - "1221:1221"
+    volumes:
+      - ./app-data:/app/app-data
+    user: "${UID}:${GID}"
+    environment:
+      - APP_BASE_URL=http://192.168.0.215:1221  # Match your access URL
