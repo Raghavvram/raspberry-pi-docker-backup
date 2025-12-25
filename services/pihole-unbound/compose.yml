@@ -1,0 +1,43 @@
+networks:
+  dns_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
+
+services:
+  pihole:
+    container_name: pihole
+    hostname: pihole
+    image: pihole/pihole:latest # remember to change this if you're using rpi
+    networks:
+      dns_net:
+        ipv4_address: 172.30.0.7
+    ports:
+      - "5354:53/tcp"
+      - "5354:53/udp"
+      - "85:80/tcp"
+    environment:
+      TZ: 'Asia/Kolkata'
+      WEBPASSWORD: 'admin@007'
+      PIHOLE_DNS: '172.30.0.8#5053'
+    volumes:
+      - '/home/admin/docker/pihole-unbound/pihole/etc-pihole/:/etc/pihole/'
+      - '/home/admin/docker/pihole-unbound/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/'
+    restart: unless-stopped
+
+  unbound:
+    container_name: unbound
+    image: mvance/unbound:latest # remember to change this if you're using rpi
+    networks:
+      dns_net:
+        ipv4_address: 172.30.0.8
+    volumes:
+      - '/home/admin/docker/pihole-unbound/unbound:/opt/unbound/etc/unbound'
+    ports:
+      - "5053:53/tcp"
+      - "5053:53/udp"
+    healthcheck:
+      test: ["NONE"]
+    restart: unless-stopped
+
