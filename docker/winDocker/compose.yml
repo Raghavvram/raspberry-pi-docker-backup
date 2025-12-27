@@ -1,0 +1,33 @@
+name: "winapps"
+
+volumes:
+  data:
+
+services:
+  windows:
+    image: ghcr.io/dockur/windows:latest
+    container_name: WinApps
+    environment:
+      VERSION: "11"
+      RAM_SIZE: "4G"
+      CPU_CORES: "2"
+      DISK_SIZE: "64G"
+      USERNAME: "admin"
+      PASSWORD: "admin@007"
+      HOME: "${HOME}"
+    ports:
+      - 0.0.0.0:18006:8006
+      - 0.0.0.0:33389:3389/tcp
+      - 0.0.0.0:33389:3389/udp
+    cap_add:
+      - NET_ADMIN
+    stop_grace_period: 120s
+    restart: on-failure
+    volumes:
+      - data:/storage
+      - ${HOME}:/shared
+      - ./oem:/oem
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+
