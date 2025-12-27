@@ -1,0 +1,19 @@
+services:
+  macos:
+    image: dockurr/macos
+    container_name: macos
+    environment:
+      VERSION: "15"
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 28006:8006
+      - 25900:5900/tcp
+      - 25900:5900/udp
+    volumes:
+      - ./macos:/storage
+    restart: always
+    stop_grace_period: 2m
