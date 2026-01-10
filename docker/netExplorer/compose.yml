@@ -1,0 +1,19 @@
+services:
+  nextexplorer:
+    image: nxzai/explorer:latest
+    container_name: nextexplorer
+    restart: unless-stopped
+    ports:
+      - "57969:3000"
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - /:/mnt/Files  # Keep if needed, but test without first
+    environment:
+      - NODE_ENV=production
+      - PUBLIC_URL=http://192.168.0.225:57969  # Match your actual access URL/port [web:1]
+      - SHOW_VOLUME_USAGE=true
+      # Optional: Fix UID issues if permissions persist
+      - PUID=1000
+      - PGID=1000
+
