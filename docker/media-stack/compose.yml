@@ -1,0 +1,126 @@
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+      - WEBUI_PORT=6080
+    # Remove DOCKER_MODS - use network mode instead
+    network_mode: "host"
+    volumes:
+      - ./appdata/qbittorrent:/config
+      - ./data/downloads:/downloads
+      - ./data/media:/media
+    ports:
+      - 6080:6080
+      - 59681:59681
+      - 59681:59681/udp
+    # Remove networks section when using network_mode: host
+    restart: unless-stopped
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - ./appdata/prowlarr:/config
+    ports:
+      - 59696:9696
+    networks:
+      media_net:
+        ipv4_address: 172.47.0.3
+    restart: unless-stopped
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - ./appdata/radarr:/config
+      - ./data/media/movies:/movies
+      - ./data/downloads:/downloads
+    ports:
+      - 57878:7878
+    networks:
+      media_net:
+        ipv4_address: 172.47.0.4
+    restart: unless-stopped
+
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - ./appdata/bazarr:/config
+      - ./data/media/movies:/movies
+      - ./data/media/tv:/tv
+    ports:
+      - 56767:6767
+    networks:
+      media_net:
+        ipv4_address: 172.47.0.5
+    restart: unless-stopped
+
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - ./appdata/jellyfin:/config
+      - ./data/media/tv:/data/tvshows
+      - ./data/media/movies:/data/movies
+    ports:
+      - 18996:8096
+      - 28920:8920
+      - 37359:7359/udp
+      - 11900:1900/udp
+    networks:
+      media_net:
+        ipv4_address: 172.47.0.6
+    restart: unless-stopped
+
+  jellyseerr:
+    image: ghcr.io/fallenbagel/jellyseerr:latest
+    init: true
+    container_name: jellyseerr
+    environment:
+      - LOG_LEVEL=debug
+      - TZ=Asia/Kolkata
+    volumes:
+      - ./appdata/jellyseerr:/app/config
+    ports:
+      - 15055:5055
+    networks:
+      media_net:
+        ipv4_address: 172.47.0.7
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:5055/api/v1/status || exit 1
+      start_period: 20s
+      timeout: 3s
+      interval: 15s
+      retries: 3
+    restart: unless-stopped
+    depends_on:
+      - jellyfin
+
+networks:
+  media_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.47.0.0/24
